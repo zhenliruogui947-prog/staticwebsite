@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>予約管理 | hair salon URU by charmant</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-name">hair salon URU by charmant</span>
+        <img src="assets/IMG_3364.jpg" alt="hair salon URU by charmant" />
+      </a>
+    </header>
+
+    <main class="section owner-section">
+      <div class="section-heading">
+        <p class="eyebrow">Owner Only</p>
+        <h2>予約管理ページ</h2>
+      </div>
+
+      <div id="owner-gate" class="contact-card">
+        <p>このページはオーナー専用です。合言葉を入力してください。</p>
+        <form id="owner-gate-form" class="owner-gate-form">
+          <input type="password" id="owner-passcode" placeholder="合言葉" required />
+          <button type="submit" class="btn btn-primary">表示する</button>
+        </form>
+        <p class="booking-note-small">
+          ※このロックは簡易的なものです。ブラウザの開発者ツールなどで内容を見られる可能性があるため、実運用では本物の認証基盤の導入をおすすめします。
+        </p>
+      </div>
+
+      <div id="owner-content" hidden>
+        <div class="owner-toolbar">
+          <p id="owner-count"></p>
+          <button type="button" id="owner-refresh" class="btn btn-secondary">更新</button>
+        </div>
+        <div class="owner-table-wrap">
+          <table class="owner-table" id="owner-table">
+            <thead>
+              <tr>
+                <th>日付</th>
+                <th>時間</th>
+                <th>お名前</th>
+                <th>連絡先</th>
+                <th>ご要望</th>
+                <th>受付日時</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="owner-table-body"></tbody>
+          </table>
+        </div>
+        <p id="owner-empty" class="booking-placeholder" hidden>現在、予約はありません。</p>
+        <p class="booking-note-small">
+          ※この一覧は、お客様が予約フォームを送信したブラウザに保存されたデータのみを表示するデモです。実際の運用では、全端末で共有されるサーバー側のデータベースが必要です。
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 hair salon URU by charmant</p>
+    </footer>
+
+    <script src="assets/owner.js"></script>
+  </body>
+</html>
