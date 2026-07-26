@@ -23,4 +23,4 @@ npm run build
 - `src/lib/bookings.js` - 予約データ(localStorage)の共通ロジック
 - `public/assets/` - 画像アセット
 
-`/owner` はオーナー専用の予約管理ページ(簡易パスコード)。`legacy-static-site/` には移行前の静的HTML版が参考として残されている。
+`/owner` はオーナー専用の予約管理ページ(簡易パスコード)。`docs/` には移行前の静的HTML版が参考として残されている。
