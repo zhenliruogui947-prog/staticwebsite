@@ -1,17 +1,248 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="hair salon URU by charmant の公式サイト。髪質に合わせたカウンセリングと丁寧な施術を提供します。"
     />
     <title>hair salon URU by charmant</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand-name">hair salon URU by charmant</span>
+        <img src="assets/IMG_3364.jpg" alt="hair salon URU by charmant" />
+      </a>
+      <nav class="site-nav" aria-label="ページ内メニュー">
+        <a href="#concept">CONCEPT</a>
+        <a href="#service">SERVICE</a>
+        <a href="#location">LOCATION</a>
+        <a href="#menu">MENU</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#booking">RESERVATION</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" style="background-image: url('assets/1747600151-PTUWjC86hVZ0RXGi5Orxa2Yn.webp');">
+        <div class="hero-copy">
+          <p class="eyebrow">個々の髪質に寄り添う、上質なヘアケア</p>
+          <h1>髪の悩みを、あなたらしい美しさへ。</h1>
+          <p class="lead">
+            カウンセリングから施術、仕上がりまで丁寧に。髪質や悩みに合わせたご提案を通じて、
+            毎日の自分らしさを支えます。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#booking">予約する</a>
+            <a class="btn btn-secondary" href="#concept">コンセプトを見る</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="concept" class="section intro-section">
+        <div class="section-heading">
+          <p class="eyebrow">Concept</p>
+          <h2>信頼感と温度感を大切に。</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>丁寧なカウンセリング</h3>
+            <p>髪質・悩み・生活スタイルを確認し、最適な施術プランをご提案します。</p>
+          </article>
+          <article class="card">
+            <h3>髪質に合わせた薬液</h3>
+            <p>お客様それぞれの髪質に合わせて、やさしく効く薬液を選びます。</p>
+          </article>
+          <article class="card">
+            <h3>マンツーマンの安心感</h3>
+            <p>一人ひとりに向き合う空間で、落ち着いて施術を受けていただけます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="service" class="section services-section">
+        <div class="section-heading">
+          <p class="eyebrow">Service</p>
+          <h2>最近、髪が扱いにくくなった「何をしてもまとまらない」そんなお悩みはありませんか？</h2>
+        </div>
+        <div class="services-list">
+          <div class="service-item" style="background-image: url('assets/service-cut.jpg');" tabindex="0">
+            <div class="service-item-text">
+              <h3>CUT</h3>
+              <p>顔周りや骨格に合わせた、自然な印象の仕上がりを目指します。</p>
+            </div>
+          </div>
+          <div class="service-item" style="background-image: url('assets/hair-salon-photo06.png');" tabindex="0">
+            <div class="service-item-text">
+              <h3>COLOR</h3>
+              <p>髪の状態に合わせて、透明感と扱いやすさを両立させる色味をご提案。</p>
+            </div>
+          </div>
+          <div class="service-item" style="background-image: url('assets/service-treatment.jpg');" tabindex="0">
+            <div class="service-item-text">
+              <h3>TREATMENT</h3>
+              <p>ダメージケアとまとまりを重視し、日常のヘアケアまで考えた施術です。</p>
+            </div>
+          </div>
+        </div>
+        <p class="photo-credit">
+          Photos: Candace McDaniel / <a href="https://stocksnap.io/" target="_blank" rel="noreferrer">StockSnap</a> (CC0) [CUT],
+          出典未確認 [COLOR],
+          geehairimages / <a href="https://commons.wikimedia.org/wiki/File:Hair_Oil_Treatment_at_Hair_Salon.jpg" target="_blank" rel="noreferrer">Wikimedia Commons</a> (CC BY 2.0) [TREATMENT]
+        </p>
+      </section>
+
+      <section id="location" class="section location-section">
+        <div class="section-heading">
+          <p class="eyebrow">Location</p>
+          <h2>心地よい時間を過ごせる、上質な空間へ。</h2>
+        </div>
+        <div class="location-grid">
+          <dl class="location-info">
+            <div>
+              <dt>住所</dt>
+              <dd>東京都渋谷区〇〇1-2-3 〇〇ビル2F</dd>
+            </div>
+            <div>
+              <dt>アクセス</dt>
+              <dd>渋谷駅より徒歩5分</dd>
+            </div>
+            <div>
+              <dt>営業時間</dt>
+              <dd>10:00 - 19:00</dd>
+            </div>
+            <div>
+              <dt>定休日</dt>
+              <dd>毎週月曜日</dd>
+            </div>
+            <div>
+              <dt>電話番号</dt>
+              <dd>03-1234-5678</dd>
+            </div>
+          </dl>
+          <div class="location-map" aria-hidden="true">MAP</div>
+        </div>
+      </section>
+
+      <section id="menu" class="section menu-section">
+        <div class="section-heading">
+          <p class="eyebrow">Menu</p>
+          <h2>メニュー・料金</h2>
+        </div>
+        <ul class="menu-list">
+          <li>
+            <span class="menu-name">カット</span>
+            <span class="menu-price">¥6,600〜</span>
+          </li>
+          <li>
+            <span class="menu-name">カラー</span>
+            <span class="menu-price">¥8,800〜</span>
+          </li>
+          <li>
+            <span class="menu-name">トリートメント</span>
+            <span class="menu-price">¥4,400〜</span>
+          </li>
+          <li>
+            <span class="menu-name">パーマ</span>
+            <span class="menu-price">¥9,900〜</span>
+          </li>
+          <li>
+            <span class="menu-name">縮毛矯正</span>
+            <span class="menu-price">¥13,200〜</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="gallery" class="section gallery-section">
+        <div class="section-heading">
+          <p class="eyebrow">Gallery</p>
+          <h2>サロンの雰囲気をご覧ください。</h2>
+        </div>
+        <div class="photo-gallery">
+          <img src="assets/photo-color.jpg" alt="カラーリング施術の様子" loading="lazy" />
+          <img src="assets/hair-item2.png" alt="シャンプー・コンディショナー・トリートメント・ヘアオイルのボトル" loading="lazy" />
+          <img src="assets/photo-interior.jpg" alt="サロンの内装イメージ" loading="lazy" />
+        </div>
+        <p class="photo-credit">
+          Photos: <a href="https://hairspies.com/" target="_blank" rel="noreferrer">Hair Spies</a> (CC BY 2.0),
+          出典未確認,
+          <a href="https://commons.wikimedia.org/wiki/File:Hair_Salon_Stations.jpg" target="_blank" rel="noreferrer">Wikimedia Commons</a> (CC BY-SA 4.0)
+        </p>
+      </section>
+
+      <section id="booking" class="section booking-section">
+        <div class="section-heading">
+          <p class="eyebrow">Reservation</p>
+          <h2>ご希望の日時を選んでご予約ください。</h2>
+        </div>
+        <div class="booking-panel">
+          <div class="booking-calendar">
+            <div class="calendar-header">
+              <button type="button" id="cal-prev" aria-label="前の月">‹</button>
+              <p id="cal-month-label"></p>
+              <button type="button" id="cal-next" aria-label="次の月">›</button>
+            </div>
+            <div class="calendar-weekdays">
+              <span>月</span><span>火</span><span>水</span><span>木</span><span>金</span><span>土</span><span>日</span>
+            </div>
+            <div class="calendar-grid" id="cal-grid"></div>
+            <p class="calendar-note">定休日: 毎週月曜日 / 営業時間: 10:00〜19:00</p>
+          </div>
+          <div class="booking-form-area">
+            <p class="booking-placeholder" id="booking-placeholder">カレンダーから日付を選択してください。</p>
+            <div id="booking-step-time" hidden>
+              <h3 id="booking-selected-date"></h3>
+              <div class="time-slots" id="time-slots"></div>
+            </div>
+            <form id="booking-form" hidden>
+              <h3>ご予約内容の確認</h3>
+              <p id="booking-summary"></p>
+              <label>お名前
+                <input type="text" id="booking-name" required />
+              </label>
+              <label>電話番号またはメール
+                <input type="text" id="booking-contact" required />
+              </label>
+              <label>ご要望など(任意)
+                <textarea id="booking-memo" rows="3"></textarea>
+              </label>
+              <div class="booking-form-actions">
+                <button type="button" class="btn btn-secondary" id="booking-back">戻る</button>
+                <button type="submit" class="btn btn-primary">この内容で予約する</button>
+              </div>
+            </form>
+            <div id="booking-confirm" class="booking-confirm" hidden>
+              <p>ご予約ありがとうございます。以下の内容で受け付けました。</p>
+              <p id="booking-confirm-detail"></p>
+              <p class="booking-note-small">
+                ※本サイトの予約フォームはデモ機能のため、内容はこのブラウザにのみ保存されます。確実なご予約は下記の外部予約サイトまたはお電話でも承っております。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>まずはお気軽にご相談ください。</h2>
+        </div>
+        <div class="contact-card">
+          <p>ご予約・ご質問は、Instagramやお電話からも承っております。</p>
+          <a class="btn btn-primary" href="https://beauty.hotpepper.jp/slnH000813043/" target="_blank" rel="noreferrer">外部予約サイト(Hot Pepper Beauty)へ</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 hair salon URU by charmant</p>
+      <p class="footer-links"><a href="privacy.html">プライバシーポリシー</a></p>
+    </footer>
+
+    <script src="assets/booking.js"></script>
   </body>
 </html>
